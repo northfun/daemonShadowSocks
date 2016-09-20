@@ -1,6 +1,8 @@
 #! /bin/bash
 
-res=`ps -ufbs | grep shadowsocks-ser | wc -l`
+username=`whoami`
+
+res=`ps -u$username | grep shadowsocks-ser | wc -l`
 
 if [ $res -ge 1 ]
 then 

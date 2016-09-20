@@ -4,7 +4,7 @@ logDate=`date +%Y%m%d%H%M%S`
 
 mv $ss/log $ss/logs/log.$logDate
 
-config="$ss/config2.json"
+config="$ss/config.json"
 logfile="$ss/log"
 
 touch $logfile

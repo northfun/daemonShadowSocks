@@ -16,14 +16,6 @@ func runShell(str string) string {
 	return string(bytes)
 }
 
-func startShell(str string) {
-	cmd := exec.Command(str)
-	err := cmd.Start()
-	if err != nil {
-		fmt.Println("cmd.Start: ", err)
-	}
-}
-
 func main() {
 	for {
 		str := runShell("./checkSS.sh")
